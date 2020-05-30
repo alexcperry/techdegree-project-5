@@ -27,6 +27,11 @@ input {
   margin: 0 10px 20px;
 }
 
+.gallery-images:hover {
+  border: 2px solid #2c4d6e;
+  margin: 0 23px 16px;
+}
+
 /*-------------------------------*/
 /*         Media Queries         */
 /*-------------------------------*/
