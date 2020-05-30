@@ -2,8 +2,7 @@
 
 $('.search-box').on('keyup', function () {
 
-  let searchTerm = $('.search-box').val();
-
+  let searchTerm = $('.search-box').val().toLowerCase();
 
   $('.gallery-link').each(function (index, link) {
 
