@@ -1,12 +1,20 @@
 
 
-$('search-box').on('keyup', function () {
+$('.search-box').on('keyup', function () {
 
-  let searchTerm = $('search-box').val();
+  let searchTerm = $('.search-box').val();
 
-  console.log(searchTerm);
 
-  // $('a').each(function(index,element) {
+  $('.gallery-link').each(function (index, link) {
 
-  // });
+    let photoDescription = $(link).attr('data-title').toLowerCase();
+
+    console.log(!photoDescription.includes(searchTerm));
+    if (!photoDescription.includes(searchTerm)) {
+      $(link).css('display', 'none');
+    } else {
+      $(link).css('display', 'block');
+    }
+
+  });
 });
